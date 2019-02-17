@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project: CommYOUte</title>
+        <script src="maps.js"></script>
+    </head>
+    <link rel="stylesheet" href="welcome3.css">
+<style>
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:darkkhaki;
+    /* background-image: url("https://i.imgur.com/2hDqEW0.gif"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+</style>
+<body>
+
+  <!-- Navigation Bar/Heading -->
+  <!-- <div class = "top">
+    <div class ="white-bar" style ="letter-spacing:5px;">
+      <a href="#home" class="bar-button">Home</a>
+      <div class="right-bar">
+        <a href=" #about" class="bar-button">About</a>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Project Background and Details -->
+  <div class="Project">
+      <h1 style="font-size:200px; text-align:center"><font face = "arial" fill=white stroke=black>commYOUte</font></h1>
+    <h2 style="color:rgb(46, 45, 45)"><i>Mission: Sustainability and Safety</i></h2>
+    <h3>About Our Project</h3>
+    <p>We want to create a platform for transportation advocacy by collecting commuting data. Reliable 
+      access to transit has been found to be a major factor in determining upward mobility for low-income households : 
+      long, difficult commutes and inability to get to workplaces severely limits opportunities.</p>
+  </div>
+
+  <!-- Rating the Safety -->
+  <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+      </style>
+  <h2>Safety Rankings Explained</h2>
+
+  <table align="center" id = t01>
+    <tr>
+      <th align="center">Criteria</th>
+      <th align="center">Description</th>
+    </tr>
+    <tr>
+      <td>Accessibility</td>
+      <td>If the walking distance to the bus stop is over 0.25 miles, subtract 1 point.</td>
+    </tr>
+    <tr>
+      <td>Frequency</td>
+      <td>If the time until the next bus is  greater than 15 minutes,  subtract 1 point.</td>
+    </tr>
+    <tr>
+      <td>Travel Time</td>
+      <td>For longer commutes, if the bus time is greater than the car time by 1.5 magnitudes,  subtract 1 point.</td>
+    </tr>
+    <tr>
+      <td>Convenience</td>
+      <td>If there's more than one transfer to another bus,  subtract 1 point.</td>
+    </tr>
+  </table>
+
+
+  <!-- The Map API -->
+<body>
+    <!-- <button onclick="revealMessage()">Click to </button>
+    <div id="hiddenMessage" style="display:none"> -->
+      <h4>The saftey rating of the route is as follows: </h4>
+      <button align="center" id="countDownButton" onclick="countDown()">4</button>
+    <!-- </div> -->
+    <h2>Map</h2>
+</body>
+
+  <!-- Contact Information -->
+  <div class="container" id="contact">
+    <h2>Contact</h2>
+    <p>Let us know if there's anything else you'd like to see! We'd love your feedback.</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="input" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="input" type="email" placeholder="Your Email" required name="Email"></p>
+      <p><input class="input" type="text" placeholder="Message" required name="Message"></p>
+      <p><button class="submit-button" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+
+
+  
+<!-- Footer -->
+<footer>
+    <div class="footer">
+        &copy; 2019 made by commYOUters during Pearl Hacks
+      </div>
+  </footer>
+
+
+</body>
+</html>

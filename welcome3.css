@@ -1,0 +1,93 @@
+h1 {
+    text-shadow: 3px 2px white;
+  }
+
+body {
+    border: 10px solid greenyellow;
+}
+
+  button,html [type=button],[type=reset],[type=submit]{
+    -webkit-appearance:button
+}
+
+.top{
+    position:fixed;
+    width:100%;
+    z-index:1
+}
+
+.white-bar {
+    padding:8px 16px;
+    float:left;
+    width:auto;
+    border: seagreen;
+    display:block;
+    outline:0
+}
+
+.white-bar{
+    position:static;
+    float:left;
+    text-align:center;
+}
+
+.input{
+    
+    padding:8px;
+    display:block;
+    border:salmon;
+    border-bottom:1px solid #ccc;
+    width:20%
+}
+
+table#t01 {
+    width: 60%; 
+    background-color: slateblue;
+    border-spacing: 5px;
+  }
+
+  table#t01 tr:nth-child(even) {
+    background-color: #eee;
+  }
+  table#t01 tr:nth-child(odd) {
+    background-color: #fff;
+  }
+  table#t01 th {
+    color: white;
+    background-color: black;
+  }
+
+.Project {
+    width: 60%;
+}
+
+.footer{
+    padding-top:20px;
+    padding-bottom:10px;
+    color:#000;
+    font-weight:400i;
+    font-size:9.5px;
+    text-align:center;
+    position: bottom;
+  }
+
+  .container:hover{
+    display:block
+}
+.container:hover{
+    display:inline-block
+}
+
+.picss{
+    max-width:100%;
+    height:auto
+}
+img{
+    vertical-align:middle
+}
+
+.bottomleft{
+    position:absolute;
+    left:0;
+    bottom:0
+}

@@ -3,7 +3,7 @@
     <head>
         <title>Project: CommYOUte</title>
         <script src="maps.js"></script>
-    </head>
+    
     <link rel="stylesheet" href="welcome3.css">
 <style>
 body {
@@ -13,12 +13,12 @@ body {
 </style>
 <body>
   <!-- Project Background and Details -->
-  <h1 style="font-size:200px; text-align:center"><span style="background-color: #FFFF00"><font face = "arial" fill=white stroke=black>commYOUte!</font></span></h1>
-  <h6 style="font-size:25px; text-align:center"><i> Pearl Hacks Project by Katerina Wu, Jasmin Pitcher, Lena ILagan, Tasmia Zaman</i></h6>
-  <div class="Project">
-  
+  <div class="bordeer">
+      <h1 style="font-size:200px; text-align:center"><span style="background-color: #FFFF00"><font face = "arial" fill=white stroke=black>commYOUte!</font></span></h1>
+      <h6 style="font-size:25px; text-align:center"><i> Pearl Hacks Project by Katerina Wu, Jasmin Pitcher, Lena ILagan, Tasmia Zaman</i></h6>    
+  </div>
+  <div class="Project">    
     <h2 style= "font-size:80px; text-align:left"><i>Mission: Sustainability <br /> and Safety</i></h2>
- 
     <h3 style= "font-size:30px">About Our Project</h3>
     <p class="demopara" style= "font-size:20px; text-align:justify">We want to create a platform for transportation advocacy by collecting commuting data. Reliable 
       access to transit has been found to be a major factor in determining upward mobility for low-income households : 
@@ -45,7 +45,7 @@ body {
         background-color: #dddddd;
       }
       </style>
-    <div class="Project2">
+    <div class="Project2 bordeer>
         <h2 style= "font-size:80px; text-align:left"><i> Safety Rankings and Criteria</i></h2>
         <h3 style= "font-size:30px">Why we ranked it as such</h3>
         <p class="demopara" style= "font-size:20px; text-align:justify">These four factors were chosen based on Chapters 3 and 4 of the Transit Capacity and Quality of Service Manual (Third Edition, 2013), which focus on the concepts and methods affecting the  quality of public transit service. There are other factors that the manual discusses such as accuracy of real-time bus arrival information, comfort and crowding inside the bus, and street traffic patterns. However, we decided to focus on four factors that would be easily quantifiable. 
@@ -81,27 +81,80 @@ body {
 </br>
 
   <!-- The Buttons -->
-<body>
   <div class="button">
       <button onclick="revealMessage()"> Click to calculate safety</button>
       <div id="hiddenMessage" style="display:none"> 
-          <h4 style="text-align:left">Click each time it doesn't meet criteria. </br>
+          <h4 style="text-align:center">Click each time it doesn't meet criteria. </br>
              The saftey rating of the route is: </h4>
         <button id="countDownButton" onclick="countDown()">4</button>
       </div>
   </div>
-</body>
 <!-- Google Maps -->
-<body>
     <div class="maps">
-        <h2 style= "font-size:80px; text-align:left"><i>Mapping API</i></h2>
+        <h2 style= "font-size:80px; text-align:left"><i>Check Your Commute</i></h2>
         <!-- <h3 style= "font-size:20px">Mapping and Layers</h3> -->
         <!-- <p class="demopara" style= "font-size:20px; text-align:justify">Somehow</p> -->
-    </div>
-</body>
+      </div>
+      
+          <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+          <meta charset="utf-8">
+          <title>Transit Layer</title>
+          <style>
+            /* Always set the map height explicitly to define the size of the div
+             * element that contains the map. */
+            #map {
+              height: 100%;
+            }
+            /* Optional: Makes the sample page fill the window. */
+            html, body {
+              height: 100%;
+              margin: 0;
+              padding: 0;
+            }
+          </style>
+          <div class="button">
+              <input id="start" type="text" name="fname" placeholder = "Enter Starting Location">
+              <input id="end" type="text" name="fname" placeholder = "Enter Destination"></input>
+                <button onclick="calcRoute()">Show my route</button>
+          </div>
+      
+          <div id="map"></div>
+          <script>
+            var directionsService;
+            var directionsDisplay;
+            function initMap() {
+              directionsService = new google.maps.DirectionsService();
+              directionsDisplay = new google.maps.DirectionsRenderer();
+              var chapelHill = new google.maps.LatLng(35.9132, -79.0558);
+              var mapOptions = {
+                zoom:15,
+                center: chapelHill
+              }
+              var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+              directionsDisplay.setMap(map);
+            }
+            function calcRoute() {
+              var start = document.getElementById('start').value;
+              var end = document.getElementById('end').value;
+              var request = {
+                origin: start,
+                destination: end,
+                travelMode: 'TRANSIT'
+              };
+              directionsService.route(request, function(result, status) {
+                if (status == 'OK') {
+                  directionsDisplay.setDirections(result);
+                }
+              });
+            }
+          </script>
+          <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCERsDJ94EUgPiTMIxZWIKjJjNleQ288pY
+          &callback=initMap">
+          </script>
+
 
   <!-- Contact Information -->
-<body>
   <div class="container" id="contact">
     <h2>Contact</h2>
     <p>Let us know if there's anything else you'd like to see! We'd love your feedback.</p>
@@ -112,7 +165,6 @@ body {
       <p><button class="submit-button" type="submit">Send feedback</button></p>
     </form>
   </div>
-</body>
 
 
 <!-- Footer -->
@@ -122,5 +174,7 @@ body {
       </div>
   </footer>
 
+<div class="clear"></div>
 </body>
+</head>
 </html>

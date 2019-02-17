@@ -2,12 +2,8 @@ h1 {
     text-shadow: 3px 2px white;
   }
 
-body {
+.bordeer {
     border: 10px solid greenyellow;
-}
-
-  button,html [type=button],[type=reset],[type=submit]{
-    -webkit-appearance:button
 }
 
 table#t01 {
@@ -74,13 +70,34 @@ table#t01 {
 .demopara {
     line-height: 2 ;
   }
+  .button{
+    background-color: #4CAF50;
+    border: black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 26px;
+    align-items: center;
+  }
 
-.button {
-    padding:90px;
-}
+  .button button{
+    background-color: #4CAF50;
+    border: black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 26px;
+    align-items: center;
+  }
 .maps{
     padding: 90px;
 }
 .container{
     padding: 20px;
+}
+
+.clear{
+    clear:both
 }

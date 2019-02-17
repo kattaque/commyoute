@@ -10,36 +10,6 @@ body {
     -webkit-appearance:button
 }
 
-.top{
-    position:fixed;
-    width:100%;
-    z-index:1
-}
-
-.white-bar {
-    padding:8px 16px;
-    float:left;
-    width:auto;
-    border: seagreen;
-    display:block;
-    outline:0
-}
-
-.white-bar{
-    position:static;
-    float:left;
-    text-align:center;
-}
-
-.input{
-    
-    padding:8px;
-    display:block;
-    border:salmon;
-    border-bottom:1px solid #ccc;
-    width:20%
-}
-
 table#t01 {
     width: 60%; 
     background-color: slateblue;
@@ -95,18 +65,6 @@ table#t01 {
     text-align:center;
     position: bottom;
   }
-
-.picss{
-    max-width:100%;
-    height:auto
-}
-/* img{
-    vertical-align:middle
-}
-img{
-    border-style:none
-} */
-
 .bottomleft{
     position:absolute;
     left:0;

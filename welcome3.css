@@ -44,6 +44,8 @@ table#t01 {
     width: 60%; 
     background-color: slateblue;
     border-spacing: 5px;
+    font-size: 21px;
+    line-height: 2;
   }
 
   table#t01 tr:nth-child(even) {
@@ -58,7 +60,30 @@ table#t01 {
   }
 
 .Project {
-    width: 60%;
+    width: 40%;
+    padding:90px;
+    font-size:95px;
+    float: left;
+}
+.Project2 {
+    width: 40%;
+    padding:90px;
+    font-size:95px;
+    float: right;
+}
+
+.logo {
+    float: left;
+    width: 45%;
+    padding-top: 300px;
+
+}
+
+.logo2 {
+    float: right;
+    width: 40%;
+    padding-top: 300px;
+
 }
 
 .footer{
@@ -75,12 +100,29 @@ table#t01 {
     max-width:100%;
     height:auto
 }
-img{
+/* img{
     vertical-align:middle
 }
+img{
+    border-style:none
+} */
 
 .bottomleft{
     position:absolute;
     left:0;
     bottom:0
+}
+
+.demopara {
+    line-height: 2 ;
+  }
+
+.button {
+    padding:90px;
+}
+.maps{
+    padding: 90px;
+}
+.container{
+    padding: 20px;
 }

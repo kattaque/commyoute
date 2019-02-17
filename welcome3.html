@@ -8,7 +8,7 @@
 <style>
 body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color:darkkhaki;
+    background-color:white;
     /* background-image: url("https://i.imgur.com/2hDqEW0.gif"); */
     background-repeat: no-repeat;
     background-position: center;
@@ -23,20 +23,27 @@ body {
     <div class ="white-bar" style ="letter-spacing:5px;">
       <a href="#home" class="bar-button">Home</a>
       <div class="right-bar">
+          
         <a href=" #about" class="bar-button">About</a>
       </div>
     </div>
   </div> -->
 
+
   <!-- Project Background and Details -->
+  <h1 style="font-size:200px; text-align:center"><span style="background-color: #FFFF00"><font face = "arial" fill=white stroke=black>commYOUte!</font></span></h1>
+  <h6 style="font-size:25px; text-align:center"><i> Pearl Hacks Project by Katerina Wu, Jasmin Pitcher, Lena ILagan, Tasmia Zaman</i></h6>
   <div class="Project">
-      <h1 style="font-size:200px; text-align:center"><font face = "arial" fill=white stroke=black>commYOUte</font></h1>
-    <h2 style="color:rgb(46, 45, 45)"><i>Mission: Sustainability and Safety</i></h2>
-    <h3>About Our Project</h3>
-    <p>We want to create a platform for transportation advocacy by collecting commuting data. Reliable 
+  
+    <h2 style= "font-size:80px; text-align:left"><i>Mission: Sustainability <br /> and Safety</i></h2>
+ 
+    <h3 style= "font-size:30px">About Our Project</h3>
+    <p class="demopara" style= "font-size:20px; text-align:justify">We want to create a platform for transportation advocacy by collecting commuting data. Reliable 
       access to transit has been found to be a major factor in determining upward mobility for low-income households : 
       long, difficult commutes and inability to get to workplaces severely limits opportunities.</p>
   </div>
+
+  <img class="logo" src= "https://i.imgur.com/H1BsNSC.png">
 
   <!-- Rating the Safety -->
   <style>
@@ -56,7 +63,16 @@ body {
         background-color: #dddddd;
       }
       </style>
-  <h2>Safety Rankings Explained</h2>
+    <div class="Project2">
+        <h2 style= "font-size:80px; text-align:left"><i> Safety Rankings and Criteria</i></h2>
+        <h3 style= "font-size:30px">Why we ranked it as such</h3>
+        <p class="demopara" style= "font-size:20px; text-align:justify">These four factors were chosen based on Chapters 3 and 4 of the Transit Capacity and Quality of Service Manual (Third Edition, 2013), which focus on the concepts and methods affecting the  quality of public transit service. There are other factors that the manual discusses such as accuracy of real-time bus arrival information, comfort and crowding inside the bus, and street traffic patterns. However, we decided to focus on four factors that would be easily quantifiable. 
+          </p>
+    </div>
+
+    <img class="logo2" src= "https://c.pxhere.com/photos/56/0f/legoland_miniature_world_theme_park-576803.jpg!d">
+
+  
 
   <table align="center" id = t01>
     <tr>
@@ -80,19 +96,34 @@ body {
       <td>If there's more than one transfer to another bus,  subtract 1 point.</td>
     </tr>
   </table>
+</br>
+</br>
+</br>
 
 
-  <!-- The Map API -->
+  <!-- The Buttons -->
 <body>
-    <!-- <button onclick="revealMessage()">Click to </button>
-    <div id="hiddenMessage" style="display:none"> -->
-      <h4>The saftey rating of the route is as follows: </h4>
-      <button align="center" id="countDownButton" onclick="countDown()">4</button>
-    <!-- </div> -->
-    <h2>Map</h2>
+  <div class="button">
+      <button onclick="revealMessage()"> Click to calculate safety</button>
+      <div id="hiddenMessage" style="display:none"> 
+          <h4 style="text-align:left">Click each time it doesn't meet criteria. </br>
+             The saftey rating of the route is: </h4>
+        <button id="countDownButton" onclick="countDown()">4</button>
+      </div>
+  </div>
+</body>
+</br>
+<!-- Google Maps -->
+<body>
+    <div class="maps">
+        <h2 style= "font-size:80px; text-align:left"><i>Mapping API</i></h2>
+        <!-- <h3 style= "font-size:20px">Mapping and Layers</h3> -->
+        <!-- <p class="demopara" style= "font-size:20px; text-align:justify">Somehow</p> -->
+    </div>
 </body>
 
   <!-- Contact Information -->
+<body>
   <div class="container" id="contact">
     <h2>Contact</h2>
     <p>Let us know if there's anything else you'd like to see! We'd love your feedback.</p>
@@ -100,19 +131,18 @@ body {
       <p><input class="input" type="text" placeholder="Name" required name="Name"></p>
       <p><input class="input" type="email" placeholder="Your Email" required name="Email"></p>
       <p><input class="input" type="text" placeholder="Message" required name="Message"></p>
-      <p><button class="submit-button" type="submit">SEND MESSAGE</button></p>
+      <p><button class="submit-button" type="submit">Send feedback</button></p>
     </form>
   </div>
+</body>
 
 
-  
 <!-- Footer -->
 <footer>
     <div class="footer">
-        &copy; 2019 made by commYOUters during Pearl Hacks
+        &copy; 2019 made by commYOUters Katerina Wu, Jasmin Pitcher, Lena ILagan, Tasmia Zaman during Pearl Hacks
       </div>
   </footer>
-
 
 </body>
 </html>

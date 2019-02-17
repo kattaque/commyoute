@@ -71,13 +71,6 @@ table#t01 {
     position: bottom;
   }
 
-  .container:hover{
-    display:block
-}
-.container:hover{
-    display:inline-block
-}
-
 .picss{
     max-width:100%;
     height:auto
